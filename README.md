@@ -8,7 +8,7 @@ El proyecto incluye:
 - Todos los módulos fundamentales del datapath y control
 - Testbenches completos para simulación
 - Soporte para instrucciones RV32I básicas
-- Integración opcional con FPGA **DE1-SoC**
+- Integración opcional con FPGA **DE1-SoC** (En la carpeta quartus con los cambios necesarios)
 - Visualización en LEDs y displays de 7 segmentos
 
 ## Características principales
