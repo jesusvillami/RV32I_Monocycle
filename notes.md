@@ -1,7 +1,4 @@
 
----
-
-# 📄 **notes.md **
 
 ```markdown
 # Notas del Proyecto – Procesador RV32I Monociclo (SystemVerilog)
