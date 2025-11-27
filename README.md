@@ -50,5 +50,18 @@ Incluye las familias:
 cd tb
 iverilog -g2012 -o cpu_tb.vvp ../src/*.sv cpu_tb.sv
 vvp cpu_tb.vvp 
+```
+## Cómo usar en FPGA (DE1-SoC)
 
+1. Abrir el proyecto en quartus
 
+2. Importar los archivos SystemVerilog desde src/
+
+3. Asignar pines:
+  - CLOCK_50 → clock principal
+  - LEDR[7:0] → PC actual
+  - HEX0–HEX5 → instrucción o valor ALU
+
+4. Compilar
+## Autores 
+- Jesus David Villamil Angarita 
