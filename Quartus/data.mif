@@ -1,0 +1,10 @@
+WIDTH=32;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+  000 : 00001234;   -- el valor que tenías antes en data.mem
+  [001..0FF] : 00000000;
+END;

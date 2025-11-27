@@ -1,0 +1,27 @@
+module fpga_top(
+    input  logic clk_50mhz,
+    input  logic reset_btn,
+    output logic [7:0] leds
+);
+
+    logic clk_cpu;
+    logic [31:0] pc_out;
+
+    // Clock divider
+    clock_divider #(25_000_000) CDIV (
+        .clk_in(clk_50mhz),
+        .reset(reset_btn),
+        .clk_out(clk_cpu)
+    );
+
+    // Instancia de tu CPU
+    cpu_top CPU (
+        .clk(clk_cpu),
+        .reset(reset_btn),
+        .pc_out(pc_out)
+    );
+
+    // Mostrar PC en LEDs
+    assign leds = pc_out[7:0];
+
+endmodule
