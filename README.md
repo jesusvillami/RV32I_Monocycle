@@ -64,4 +64,6 @@ vvp cpu_tb.vvp
 
 4. Compilar
 ## Autores 
-- Jesus David Villamil Angarita 
+- Jesus David Villamil Angarita
+- Bernardo Castaño Silva 
+- Alejandro Loaiza Palacio
